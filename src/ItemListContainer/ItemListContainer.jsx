@@ -1,7 +1,12 @@
+import ItemList from "./ItemList";
+import './ItemListContainer.css'
+
 function ItemListContainer(props){
-    return(
-        <h2>{props.greeting}</h2>
-    );
+   return(
+     <div className="itemListContainerCss">
+        <ItemList/>
+     </div>     
+   )
 }
 
 export default ItemListContainer;

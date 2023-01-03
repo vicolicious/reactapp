@@ -1,0 +1,16 @@
+.contenedorNav{
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.li{
+    text-decoration: none;
+}
+
+.listaNav{
+    list-style-type: none;
+}
+
