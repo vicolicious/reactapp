@@ -2,8 +2,8 @@ import './NavBar.css'
 
 
 export default function Nav(){
-    const links = [{nombre:'Remeras', url:'/'}, {nombre:'Pantalones', url:'/'},
-    {nombre:'Buzos', url:'/'},]
+    const links = [{id: 1, nombre:'Remeras', url:'/'}, {id: 2, nombre:'Pantalones', url:'/'},
+    {id: 3, nombre:'Buzos', url:'/'},]
 
     return(
         <header>
@@ -13,8 +13,8 @@ export default function Nav(){
                     <h4>logo mi tienda</h4>
                 </li>
                 {links.map((item)=>{
-                    return <li className='listaNav'>
-                    <a  className='li' href={item.url} key={item.nombre} >{item.nombre}</a></li>
+                    return <li key={item.id} className='listaNav'>
+                    <a  className='li' href={item.url} >{item.nombre}</a></li>
                 })}
                 <li className='listaNav'>
                 <span class="jam jam-shopping-cart"></span>
